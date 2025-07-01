@@ -212,6 +212,10 @@ class ROM():
     MODEL_DE            = 0xDE # Xiao ESP32S3 with Wio-SX1262 module, 433 MHz
     MODEL_DD            = 0xDD # Xiao ESP32S3 with Wio-SX1262 module, 868 MHz
 
+    PRODUCT_STATION_G2  = 0x60
+    BOARD_STATION_G1    = 0x61
+    MODEL_62            = 0x62
+
     PRODUCT_HMBRW  = 0xF0
     MODEL_FF       = 0xFF
     MODEL_FE       = 0xFE
@@ -333,6 +337,8 @@ models = {
     0x21: [820000000, 960000000, 22, "820 - 960 MHz", "rnode_firmware_opencom_xl.zip", "SX1262 + SX1280"],
     0xDE: [420000000, 520000000, 22, "420 - 520 MHz", "rnode_firmware_xiao_esp32s3.zip", "SX1262"],
     0xDD: [850000000, 950000000, 22, "850 - 950 MHz", "rnode_firmware_xiao_esp32s3.zip", "SX1262"],
+    0x61: [815000000, 940000000, 19, "815 - 940 Mhz", "rnode_firmware_station_g2.zip", "SX1262"],
+    0x62: [815000000, 940000000, 19, "815 - 940 Mhz", "rnode_firmware_station_g2.zip", "SX1262"],
     0xFE: [100000000, 1100000000, 17, "(Band capabilities unknown)", None, "Unknown"],
     0xFF: [100000000, 1100000000, 14, "(Band capabilities unknown)", None, "Unknown"],
 }
