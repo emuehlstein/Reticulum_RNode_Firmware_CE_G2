@@ -3794,6 +3794,8 @@ def main():
                             mapped_product = ROM.PRODUCT_HMBRW
                         elif args.product == "e0":
                             mapped_product = ROM.PRODUCT_TBEAM
+                        elif args.product == "60":
+                            mapped_product = ROM.PRODUCT_STATION_G2
                         else:
                             if len(args.product) == 2:
                                 mapped_product = ord(bytes.fromhex(args.product))
@@ -3822,6 +3824,8 @@ def main():
                             model = ROM.MODEL_E4
                         elif args.model == "e9":
                             model = ROM.MODEL_E9
+                        elif args.model == "62":
+                            model = ROM.MODEL_62
                         elif args.model == "ff":
                             model = ROM.MODEL_FF
                         else:
